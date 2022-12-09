@@ -6,6 +6,10 @@ app.use("/", (req, res) => {
   res.json({ message: "Hello From Express App" });
 });
 
+app.get("/new", (req, res) => {
+  res.json({ message: "New Hello From Express App" });
+});
+
 app.listen(9000, () => {
   console.log(`Starting Server on Port ${port}`);
 });
